@@ -1,0 +1,18 @@
+body {
+  width:500px;
+  margin: auto;
+}
+body div {
+  width: 500px;
+  background: gray;
+ } 
+
+ div.section-header {
+   background: red;
+   height: 100px;
+ }
+
+ div.section-container {
+   height:500px;
+ }
+

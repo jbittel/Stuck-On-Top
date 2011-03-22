@@ -1,1 +1,63 @@
-StuckOnTop
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.stuckontop.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="site.css">
+    <script type='text/javascript'>
+      $(function() {
+          $('.section-container').stickyHeader({stickyClass : 'section-header'});
+          });
+    </script>
+  </head>
+  <body>
+    <div class='section-container'>
+      <div class='section-header'>
+        Header 1
+        <input type='button' value='test' />
+      </div>
+      <p>
+      Body Stuff
+      <p>
+      <p>
+      More Body Stuff
+      </p>
+    </div>
+    <div class='section-container'>
+      <div class='section-header'>
+        Header 2
+      </div>
+      <p>
+      Body Stuff
+      <p>
+      <p>
+      More Body Stuff
+      </p>
+    </div>
+    <div class='section-container'>
+      <div class='section-header'>
+        Header 3
+        <input type='button' value='test' />
+      </div>
+
+      <p>
+      Body Stuff
+      <p>
+      <p>
+      More Body Stuff
+      </p>
+    </div>
+    <div class='section-container'>
+      <div class='section-header'>
+        Header
+      </div>
+      <p>
+      Body Stuff
+      <p>
+      <p>
+      More Body Stuff
+      </p>
+    </div>
+  </body>
+</html>
