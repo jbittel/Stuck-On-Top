@@ -19,13 +19,14 @@
 
             var placeholder = undefined;
             var originalWidth = header.outerWidth();
+            var headerOffset = header.position().top;
 
             $(window).scroll(function () {
                 var headerHeight = header.outerHeight();
                 var containerHeight = container.outerHeight();
-                var containerTop = container.offset().top;
+                var containerTop = container.offset().top + headerOffset;
                 var pageOffset = $(window).scrollTop() + settings.padding;
-                var containerBottom = containerHeight + containerTop;
+                var containerBottom = containerHeight + containerTop - headerOffset;
 
                 if (pageOffset < containerTop && placeholder != undefined) {
                     if (placeholder != undefined) {
