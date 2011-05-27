@@ -21,12 +21,9 @@
             var originalWidth = header.outerWidth();
 
             $(window).scroll(function () {
-                var containerTop = container.offset().top;
-                var headerOrigin = header.offset().top;
                 var headerHeight = header.outerHeight();
                 var containerHeight = container.outerHeight();
                 var containerTop = container.offset().top;
-                var containerSize = container.outerHeight();
                 var pageOffset = $(window).scrollTop() + settings.padding;
                 var containerBottom = containerHeight + containerTop;
 
