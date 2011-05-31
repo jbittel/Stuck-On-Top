@@ -6,7 +6,7 @@
             padding: 0
         }, options);
 
-        return $(this).each(function () {
+        return this.each(function () {
 
             var container = $(this);
             var header = $('.' + settings.stickyClass, container);
