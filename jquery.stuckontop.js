@@ -12,7 +12,7 @@
             var header = $('.' + settings.stickyClass, container);
 
             if (header.length == 0) {
-                return container;
+                return true;
             }
 
             var originalCss = {
