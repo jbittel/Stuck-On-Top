@@ -11,6 +11,10 @@
             var container = $(this);
             var header = $('.' + settings.stickyClass, container);
 
+            if (header.length == 0) {
+                return container;
+            }
+
             var originalCss = {
                 position: header.css('position'),
                 top: header.css('top'),
